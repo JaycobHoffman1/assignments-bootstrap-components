@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a demonstration of responsive web design using Bootstrap.">
+    <meta name="keywords" content="responsive, service, bootstrap">
+    <meta name="author" content="Jaycob Hoffman">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Style -->
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: none;
+            max-width: 100%;
+        }
+    </style>
+    <!-- Title -->
+    <title>Creating a Responsive Service Page with Bootstrap</title>
+</head>
+<body>
+    <header class="m-5">
+        <h1>Tech Solutions</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="#">Help</a>
+                </li>
+              </ul>
+              <form class="d-flex px-5" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+    <main class="m-5">
+        <article class="container-fluid row g-0 mb-5">
+            <section class="mb-3">
+                <h2>Our Services</h2>
+            </section>
+            <div class="col-md card mx-4 mb-5">
+                <img src="images/coding.jpg" class="card-img-top" alt="An image of a laptop with code on the screen">
+                <div class="card-body">
+                  <h5 class="card-title h3">Software Development</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi suscipit modi impedit 
+                    voluptas quibusdam vel vitae dolores porro eligendi illum fugiat explicabo aut velit excepturi 
+                    sint, fuga voluptates! Assumenda.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="col-md card mx-4 mb-5">
+                <img src="images/coding.jpg" class="card-img-top" alt="An image of a laptop with code on the screen">
+                <div class="card-body">
+                  <h5 class="card-title h3">UI/UX Design</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi suscipit modi impedit 
+                    voluptas quibusdam vel vitae dolores porro eligendi illum fugiat explicabo aut velit excepturi 
+                    sint, fuga voluptates! Assumenda.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="col-md card mx-4 mb-5">
+                <img src="images/coding.jpg" class="card-img-top" alt="An image of a laptop with code on the screen">
+                <div class="card-body">
+                  <h5 class="card-title h3">Machine Learning</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi suscipit modi impedit 
+                    voluptas quibusdam vel vitae dolores porro eligendi illum fugiat explicabo aut velit excepturi 
+                    sint, fuga voluptates! Assumenda.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </article>
+        <article class="row mb-5">
+            <section class="mb-3">
+                <h2>Contact</h2>
+            </section>
+            <form>
+                <section class="mb-3">
+                    <label for="full-name" aria-label="Full Name">Full Name: </label>
+                    <input type="text" id="full-name" name="full-name">
+                    <div role="alert" aria-live="assertive" class="d-none">This field is required.</div>
+                </section>
+                <section class="mb-3">
+                    <label for="email" aria-label="Email">Email: </label>
+                    <input type="text" id="email" name="email">
+                    <div role="alert" aria-live="assertive" class="d-none">This field is required.</div>
+                </section>
+                <section class="mb-3">
+                    <label for="message" aria-label="Message">Message: </label>
+                    <textarea id="message" name="message" rows="7" cols="75"></textarea>
+                    <div role="alert" aria-live="assertive" class="d-none">This field is required.</div>
+                </section>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

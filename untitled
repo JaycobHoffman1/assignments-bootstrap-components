@@ -1,0 +1,10 @@
+<div class="col card">
+    <img src="images/coding.jpg" class="card-img-top" alt="An image of a laptop with code on the screen">
+    <div class="card-body">
+      <h5 class="card-title h3">Card title</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi suscipit modi impedit 
+        voluptas quibusdam vel vitae dolores porro eligendi illum fugiat explicabo aut velit excepturi 
+        sint, fuga voluptates! Assumenda.</p>
+      <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+</div>
